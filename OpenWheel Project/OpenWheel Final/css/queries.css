@@ -1,0 +1,408 @@
+/**************************************/
+/* BELOW 1115 (Tablets) */
+/**************************************/
+
+@media (max-width: 70em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+/**************************************/
+/* BELOW 1040 (Tablets) */
+/**************************************/
+
+@media (max-width: 65em) {
+  .model-grid--3-cols {
+    gap: 9rem;
+  }
+}
+
+/**************************************/
+/* BELOW 985 (Tablets) */
+/**************************************/
+
+@media (max-width: 62em) {
+  .model-grid--3-cols {
+    gap: 4rem;
+  }
+
+  .heading-tertiary {
+    font-size: 3rem;
+  }
+
+  .grid--2-cols {
+    gap: 3rem;
+  }
+
+  .container {
+    padding: 0 4rem;
+  }
+
+  .highlight-btn-1 {
+    padding: 1rem 2rem 1rem 2rem;
+    font-size: 1.8rem;
+  }
+
+  .highlight-btn-2 {
+    padding: 1rem 2rem 1rem 2rem;
+    font-size: 1.8rem;
+  }
+
+  /* mobile navigation */
+
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+
+  .main-nav {
+    background-color: rgba(71, 79, 87, 0.75);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    /* 1) Hide it visually */
+    opacity: 0;
+
+    /* 2) Make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+
+    /* 3) Hide it from screen readers */
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+    padding-right: 0;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
+}
+
+/**************************************/
+/* BELOW 870 (Tablets) */
+/**************************************/
+
+@media (max-width: 55em) {
+  .model-grid--3-cols {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12rem;
+  }
+
+  .model-img-container-3 {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+
+  .btn-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-top: 1.6rem;
+  }
+
+  .highlight-img {
+    height: 100%;
+  }
+
+  .grid--footer {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .logo-col,
+  .address-col {
+    grid-column: span 3;
+  }
+
+  .nav-col {
+    grid-row: 1;
+    grid-column: span 2;
+    margin-bottom: 3.2rem;
+  }
+
+  .cta {
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+
+  .btn--form {
+    margin-top: 1.2rem;
+  }
+
+  .charging-main-container-text {
+    padding: 7rem;
+  }
+
+  .demo-grid--2-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .demo-introduce,
+  .demo-head {
+    display: none;
+  }
+
+  .demo-stats {
+    margin-bottom: 3.5rem;
+  }
+}
+
+/**************************************/
+/* Below 704px (Smaller Tablets) */
+/**************************************/
+
+@media (max-width: 44em) {
+  .grid--2-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .highlight-img-box:nth-child(2) {
+    grid-row: 1;
+  }
+
+  .model-grid--3-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .cta {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-text-box {
+    padding: 3.2rem;
+  }
+
+  .cta-img-box {
+    height: 32rem;
+    grid-row: 1;
+  }
+
+  .charging-cta-btn {
+    padding: 0.5rem 1.5rem;
+    font-size: 1.6rem;
+  }
+
+  .charging-cta-text {
+    align-self: end;
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+
+  .charging-main-container-text {
+    padding: 5rem;
+  }
+}
+
+/**************************************/
+/* Below 544px (Phones) */
+/**************************************/
+
+@media (max-width: 34em) {
+  html {
+    font-size: 50%;
+  }
+
+  .container {
+    padding: 2rem;
+  }
+
+  .hero-cta {
+    flex-direction: column;
+    top: 75%;
+  }
+
+  .hero-btn {
+    padding: 1.2rem 12rem;
+    font-size: 2.5rem;
+    font-weight: 400;
+  }
+
+  .hero-btn-2 {
+    padding: 1.2rem 11rem;
+  }
+
+  .model-img {
+    height: 14rem;
+  }
+
+  .model-specs {
+    margin-bottom: 0rem;
+  }
+
+  .highlight-btn-2 {
+    margin-bottom: 0;
+  }
+
+  .section-shopping {
+    margin-bottom: 16rem;
+  }
+
+  .section-charging {
+    margin-bottom: 3.2rem;
+  }
+
+  .charging-main-container-text {
+    padding: 4rem;
+  }
+
+  .charging-text-added-link {
+    font-size: 2rem;
+  }
+
+  .charging-grid--3-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .section-shopping {
+    align-self: auto;
+  }
+
+  .shopping-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4.5rem;
+    column-gap: 0rem;
+    width: 42rem;
+    overflow: hidden;
+    border-radius: 6px;
+  }
+
+  .shop-container {
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .shopping-img-container {
+    width: 16rem;
+    height: 22rem;
+    object-fit: cover;
+    overflow: hidden;
+  }
+
+  .shop-img {
+    display: none;
+  }
+
+  .shop-img-phone {
+    display: block;
+  }
+
+  .shop-container .shop-img-phone {
+    transition: all 1.2s;
+  }
+
+  .shop-container:hover .shop-img-phone {
+    transform: scale(1.075);
+  }
+
+  .shop-section-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .shopping-description-1 {
+    left: 8.5rem;
+    top: 9.5rem;
+  }
+
+  .shopping-description-2 {
+    left: 25.3rem;
+    top: 9.5rem;
+  }
+
+  .shopping-description-3 {
+    left: 6.4rem;
+    bottom: 4rem;
+  }
+
+  .shopping-description-4 {
+    left: 26.8rem;
+    bottom: 4rem;
+  }
+
+  .shopping-title {
+    font-size: 1.7rem;
+  }
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .hero-img {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .hero-img {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+}
+
+/**************************************/
+/* Fixing Safari flexbox gap */
+/**************************************/
+
+.no-flexbox-gap .main-nav-list li:not(:last-child) {
+  margin-right: 4.8rem;
+}
+
+.no-flexbox-gap .footer-row div:not(:last-child) {
+  margin-right: 6.4rem;
+}
+
+.no-flexbox-gap .social-links li:not(:last-child) {
+  margin-right: 2.4rem;
+}
+
+.no-flexbox-gap .footer-nav li:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+
+@media (max-width: 75em) {
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 3.2rem;
+  }
+}
+
+@media (max-width: 59em) {
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 4.8rem;
+  }
+}
